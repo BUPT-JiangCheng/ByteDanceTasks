@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性能监控面板"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_fps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前流畅度: -- FPS"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="#E0F7FA"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_simulate_anr"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="点击模拟 ANR (卡死主线程)"
+        android:backgroundTint="#FF5252"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="监控日志："
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_anr_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂无异常..."
+            android:textSize="12sp"
+            android:fontFamily="monospace"/>
+    </ScrollView>
+
+</LinearLayout>
