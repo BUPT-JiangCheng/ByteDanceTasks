@@ -62,7 +62,7 @@ public class WeatherFragment extends Fragment {
                 .build();
         weatherService = retrofit.create(WeatherService.class);
     }
-
+    // 初始化下拉框，设置监听器
     private void setupSpinner() {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(),
                 android.R.layout.simple_spinner_dropdown_item, cities);

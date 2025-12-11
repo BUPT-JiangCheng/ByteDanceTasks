@@ -31,7 +31,7 @@ public class UserDbHelper extends SQLiteOpenHelper {
         db.execSQL(sql);
 
         // 首次登录创建初始账号admin
-        db.execSQL("INSERT INTO " + TABLE_NAME + " (" + COLUMN_USERNAME + ", " + COLUMN_PASSWORD + ", " + COLUMN_SIGNATURE + ") VALUES ('admin', '123456', '我是预设的管理员')"); // ⭐ 修正：预埋数据时也提供 SIGNATURE
+        db.execSQL("INSERT INTO " + TABLE_NAME + " (" + COLUMN_USERNAME + ", " + COLUMN_PASSWORD + ", " + COLUMN_SIGNATURE + ") VALUES ('admin', '123456', '我是预设的管理员')");
     }
 
     @Override
